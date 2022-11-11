@@ -12,8 +12,9 @@
       <div class="card shadow mt-3 text-light bg-dark" style="width: 18rem;" *ngIf="control == true || i%2 == 0">
         <img class="card-img-top" [src]="foto.img" alt="Imagem de capa do card">
         <div class="card-body">
-          <h5 class="card-title text-center">{{ foto.titulo }} index: {{ i }}</h5> 
+          <h5 class="card-title text-center">{{ foto.titulo }} </h5> 
         </div>    
+        <button (click)= "deletar(foto.id)" type="button" class="btn btn-danger btn-sm btn-block">Excluir</button>
       
       
     </div>    

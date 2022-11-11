@@ -1,28 +1,29 @@
 {
-    "fotos": [
-        {
-            "id": 1,
-            "img": "https://cdn.pixabay.com/photo/2022/10/07/09/06/bridge-7504605__340.jpg", 
-            "titulo": "Ponte"
-        },
-
-        {
-            "id": 2,
-            "img": "https://cdn.pixabay.com/photo/2022/10/05/20/43/hyacinth-macaw-7501470__340.jpg", 
-            "titulo": "Arara"
-        },
-
-        {
-            "id": 3,
-            "img": "https://cdn.pixabay.com/photo/2022/10/05/20/43/hyacinth-macaw-7501470__340.jpg", 
-            "titulo": "Arara"
-        },
-
-        {
-            "id": 4,
-            "img": "https://cdn.pixabay.com/photo/2022/10/05/20/43/hyacinth-macaw-7501470__340.jpg", 
-            "titulo": "Arara"
-        }
-      
-    ]
+  "fotos": [
+    {
+      "id": 1,
+      "img": "https://cdn.pixabay.com/photo/2022/10/07/09/06/bridge-7504605__340.jpg",
+      "titulo": "Ponte"
+    },
+    {
+      "id": 2,
+      "img": "https://cdn.pixabay.com/photo/2017/07/19/05/11/pug-2517993__340.jpg",
+      "titulo": "Pug"
+    },
+    {
+      "id": 3,
+      "img": "https://cdn.pixabay.com/photo/2017/01/12/21/42/tiger-1975790__340.jpg",
+      "titulo": "Tigre"
+    },
+    {
+      "id": 4,
+      "img": "https://cdn.pixabay.com/photo/2022/10/05/20/43/hyacinth-macaw-7501470__340.jpg",
+      "titulo": "Arara"
+    },
+    {
+      "img": "https://cdn.pixabay.com/photo/2022/11/08/21/15/cliffs-7579330_960_720.jpg",
+      "titulo": "Penhascos",
+      "id": 5
+    }
+  ]
 }

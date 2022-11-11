@@ -2,6 +2,7 @@
 
 import { HttpClient } from "@angular/common/http";
 import { Component } from "@angular/core";
+import { DefaultTitleStrategy } from "@angular/router";
 
 import { Fotos } from './foto';
 
@@ -37,4 +38,9 @@ export class FotoComponent{
       this.nameButton = "Todas Imagens";
     }
   }
+  
+  deletar(id:number){
+    console.log(id);
+  }
 }
+
