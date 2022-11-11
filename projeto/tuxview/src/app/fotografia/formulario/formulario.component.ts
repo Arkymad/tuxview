@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-formulario',
@@ -9,15 +10,24 @@ export class FormularioComponent implements OnInit {
 
   nameButton = "Cadastrar";
 
-  constructor() { }
+  formulario!: FormGroup; 
+
+   
+  constructor(private formBuilder: FormBuilder){ 
+
+    this.formulario = formBuilder.group({
+      img: ['', [Validators.required, Validators.minLength(5)]],
+      titulo: ['', ]
+    });
+
+  }
 
   ngOnInit(): void {
   }
 
-
-  cadastrar(metodo:any){
-
-    alert(metodo);
+  
+  cadastro(){
+    alert("Cadastrado com sucesso");
+    console.log(this.formulario.value);
   }
-
 }
