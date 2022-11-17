@@ -1,10 +1,7 @@
-
-
-import { HttpClient } from "@angular/common/http";
 import { Component } from "@angular/core";
-import { DefaultTitleStrategy } from "@angular/router";
 
 import { Fotos } from './foto';
+import { DatabaseService } from '../../service/database.service';
 
 @Component({
     selector: 'app-foto',
@@ -13,34 +10,26 @@ import { Fotos } from './foto';
 })
 
 export class FotoComponent{
+
   nameButton = "Fotos Pares";
   titulo = "Minhas Fotos";
   control = true;
+  
   
   imagens: Fotos[] = [];
 
  
   
-  
-  constructor(private joao: HttpClient){
-  
-    joao.get<Fotos[]>('http://localhost:3000/fotos').subscribe(caixa => this.imagens = caixa)    
+  constructor(private database: DatabaseService){}
+
+  ngOnInit(){
+    this.database.getFoto().subscribe(caixa => this.imagens = caixa);
   }
 
-
-  mudar(){
-
-    this.control = !this.control;
-
-    if(this.nameButton == "Todas Imagens" ){
-      this.nameButton = "Fotos Pares"
-    }else{
-      this.nameButton = "Todas Imagens";
-    }
-  }
   
   deletar(id:number){
-    console.log(id);
+   
   }
-}
 
+  mudar(){}
+}

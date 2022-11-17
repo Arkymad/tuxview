@@ -9,34 +9,37 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class FormularioComponent implements OnInit {
 
-  /* tradutor de http pra JSON */
   httpOptions = {
     headers: new HttpHeaders({'Content-Type' : 'application/json'})
-  }
+  };
 
   nameButton = "Cadastrar";
 
+
   formulario!: FormGroup; 
 
-   
+  
   constructor(
-    private formBuilder: FormBuilder, 
-    private httpclient: HttpClient,
-    ){ 
-  }
+    private formBuilder: FormBuilder,
+    private http: HttpClient
+    ){}
+
 
   ngOnInit(): void {
-    this.validaform()
+  
+    this.validaForm();
   }
-  validaform(){
+
+ 
+  validaForm(){
     this.formulario = this.formBuilder.group({
       img: ['', [Validators.required, Validators.minLength(5)]],
-      titulo: ['', ]
+      titulo: ['', [Validators.required, Validators.minLength(3)]]
     });
   }
 
-  /* JSON.stringify converte os dados para o formato JSON */
-  cadastro(){
-    this.httpclient.post('http://localhost:3000/fotos/', JSON.stringify(this.formulario.value), this.httpOptions).subscribe();
+  
+  cadastro(){    
+   this.http.post('http://localhost:3000/fotos/',JSON.stringify(this.formulario.value), this.httpOptions).subscribe();
   }
-}
+  }

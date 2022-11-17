@@ -10,7 +10,7 @@ import { InicioComponent } from "./inicio/inicio.component";
 
 
 @NgModule({
-
+    
     declarations: [
         FotoComponent,
         FormularioComponent,
@@ -23,7 +23,7 @@ import { InicioComponent } from "./inicio/inicio.component";
         ReactiveFormsModule 
     ],
 
-
+   
     exports: [
         FotoComponent,
         FormularioComponent
