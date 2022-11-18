@@ -31,5 +31,13 @@ export class FotoComponent{
    
   }
 
-  mudar(){}
+  mudar(){
+    this.control = !this.control;
+
+    if(this.nameButton == "Todas Imagens" ){
+      this.nameButton = "Fotos Pares"
+    }else{
+      this.nameButton = "Todas Imagens";
+    }
+  }
 }
