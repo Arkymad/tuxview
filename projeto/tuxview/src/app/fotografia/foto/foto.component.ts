@@ -26,9 +26,19 @@ export class FotoComponent{
     this.database.getFoto().subscribe(caixa => this.imagens = caixa);
   }
 
-  
-  deletar(id:number){
    
+    deletar(id:number){
+
+      try{
+   
+       this.database.delFoto(id);
+   
+      }catch(error){
+   
+       console.log(error);
+       
+      }
+
   }
 
   mudar(){

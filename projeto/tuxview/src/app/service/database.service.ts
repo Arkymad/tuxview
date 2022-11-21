@@ -29,5 +29,7 @@ export class DatabaseService {
   postFoto(){}
 
   //Exclusão da foto
-  delFoto(){}
-}
+  delFoto(id:number){
+    return this.http.delete(this.API + id).subscribe();
+  }
+  }
