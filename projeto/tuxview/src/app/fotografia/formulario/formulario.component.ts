@@ -34,7 +34,7 @@ export class FormularioComponent implements OnInit {
   validaForm(){
     this.formulario = this.formBuilder.group({
       img: ['', [Validators.required, Validators.minLength(5)]],
-      titulo: ['', [Validators.required, Validators.minLength(3)]]
+      titulo: ['', [Validators.required, Validators.minLength(3)]],
     });
   }
 
