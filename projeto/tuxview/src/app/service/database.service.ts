@@ -25,9 +25,6 @@ export class DatabaseService {
     return this.http.get<Fotos[]>(this.API);
   }
 
-  //Método de cadastro da foto
-  postFoto(){}
-
   //Exclusão da foto
   delFoto(id:number){
     return this.http.delete(this.API + id).subscribe();
