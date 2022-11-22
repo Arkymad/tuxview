@@ -14,6 +14,7 @@ export class FotoComponent{
   nameButton = "Fotos Pares";
   titulo = "Minhas Fotos";
   control = true;
+ 
   
   
   imagens: Fotos[] = [];
@@ -51,3 +52,4 @@ export class FotoComponent{
     }
   }
 }
+

@@ -3,17 +3,20 @@
     {
       "img": "https://cdn.pixabay.com/photo/2014/09/03/20/15/shoes-434918_960_720.jpg",
       "titulo": "Sapato all star Branco",
-      "id": 1
+      "id": 1,
+      "quantidade": 20
     },
     {
       "img": "https://cdn.pixabay.com/photo/2013/09/12/19/57/boots-181744_960_720.jpg",
       "titulo": "bota laranja",
-      "id": 2
+      "id": 2,
+      "quantidade": 20
     },
     {
       "img": "https://cdn.pixabay.com/photo/2016/12/10/16/57/shoes-1897708_960_720.jpg",
       "titulo": "calçado esportivo preto ",
-      "id": 3
+      "id": 3,
+      "quantidade": 20
     },
     {
       "img": "https://cdn.pixabay.com/photo/2013/07/12/18/20/shoes-153310_960_720.png",
@@ -29,6 +32,7 @@
       "img": "https://cdn.pixabay.com/photo/2020/08/24/21/40/fashion-5515135_960_720.jpg",
       "titulo": "sapato social de couro preto cano alto",
       "id": 6
+      
     }
   ]
 }
